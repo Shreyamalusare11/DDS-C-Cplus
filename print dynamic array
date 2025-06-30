@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h> 
+
+int main() {
+    int *arr; 
+    int n, i;
+
+    // Prompt the user for the size of the array
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    // Dynamically allocate memory for the array using malloc
+    // n * sizeof(int) calculates the total bytes needed for n integers
+    arr = (int *)malloc(n * sizeof(int));
+
+    // Check if memory allocation was successful
+    if (arr == NULL) {
+        printf("Memory allocation failed. Exiting.\n");
+        return 1; // Indicate an error
+    }
+
+    // Prompt the user to enter the elements of the array
+    printf("Enter %d integer elements:\n", n);
+    for (i = 0; i < n; i++) {
+        printf("Element %d: ", i + 1);
+        scanf("%d", &arr[i]); // Store elements at allocated memory locations
+    }
+
+    // Print the elements of the array
+    printf("\nElements of the dynamic array:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    // Free the dynamically allocated memory to prevent memory leaks
+    free(arr);
+    arr = NULL; // Set the pointer to NULL after freeing
+
+    return 0; 
