@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+#define size 5
+ int stack[size];
+ int top=-1;
+
+ void push (int val){
+     if(top<size-1){
+         top++;
+         stack[top]=val;
+         cout<<val<<" inserted successfully"<<endl;
+     }else{
+         cout<<"stack is over flow"<<endl;
+     }
+ }
+ 
+int main() {
+
+push(10);
+push(2);
+push(5);
+push(7);
+push(11);
+push(3);
+
+    return 0;
+}
