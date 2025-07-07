@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+ #define size 6//define size
+ int stack[size];
+ int top=-1;
+ //adding comment for push
+ void push(int num){
+     if(top<size-1){
+         top++;
+         stack[top]=num;
+          cout<<num<<"inserted successfully"<<endl;
+     }else{
+         cout<<"stack is over flow"<<endl;
+     }
+ }
+ //adding comment for pop
+     void pop(){
+          if (top==-1) {
+        cout<<"Stack Underflow! Cannot pop element"<<endl;
+    } else {
+      cout<<stack[top]<<"removed"<<endl;
+        top--; 
+    }
+}
+ int main(){
+ push(10);
+push(2);
+push(5);
+push(7);
+push(11);
+push(3);
+pop();
+pop();
+     
+    return 0;
+}
