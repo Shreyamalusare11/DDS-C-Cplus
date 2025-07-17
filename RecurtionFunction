@@ -15,3 +15,15 @@ int main() {
 
     return 0;
 }
+
+void TOH(int n ,char src,char aux,char dest){
+    if(n==1){
+        cout<<"move disk"<<src<<"to"<<desk<<endl;
+    }else{
+        
+        TOH(n-1,src,desk,aux);
+        TOH(1,src,aux,desk);
+        TOH(n-1,aux,src,desk);
+    }
+}
+TOH(3,'A','B','C') function
