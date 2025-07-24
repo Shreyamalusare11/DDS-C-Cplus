@@ -26,9 +26,3 @@ void TOH(int n ,char src,char aux,char dest){
         TOH(n-1,aux,src,desk);
     }
 }
-TOH(3,'A','B','C') function
-
-stack operation on infix to postfix evaluation 
-TOH
-fill in the blank
-mcq
