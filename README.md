@@ -30,6 +30,6 @@ Git and GitHub basics
 
 Contact Me
 
-Email: your.email@example.com
+Email: malusareshreya1@gmail.com
 
-LinkedIn: [Your LinkedIn URL]
+
