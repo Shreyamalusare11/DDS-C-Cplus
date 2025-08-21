@@ -12,21 +12,16 @@ Building small projects to practice and improve my skills
 
 What I’m Learning
 
-Python programming
+c programming
+java programming 
 
-Data handling with Pandas and NumPy
-
-Basic machine learning with Scikit-learn
-
-How to use Jupyter Notebooks
 
 Skills
 
-Python (beginner)
+Java(beginner)
 
 Basic data analysis
 
-Git and GitHub basics
 
 Contact Me
 
